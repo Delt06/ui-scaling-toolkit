@@ -1,0 +1,14 @@
+{
+    "friendlyName": "Widest Android",
+    "version": 1,
+    "screens": [
+        {
+            "width": 886,
+            "height": 1920,
+            "dpi": 450.0
+        }
+    ],
+    "systemInfo": {
+        "operatingSystem": "Android"
+    }
+}

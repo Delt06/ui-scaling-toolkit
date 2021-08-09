@@ -1,0 +1,19 @@
+{
+  "name": "com.deltation.ui-scaling-toolkit",
+  "version": "0.2.1",
+  "displayName": "UI Scaling Toolkit",
+  "description": "A collection of components to ensure proper UI scaling for mobile devices.",
+  "unity": "2020.3",
+  "keywords": [
+    "UI"
+  ],
+  "author": {
+    "name": "Vladislav Kantaev",
+    "email": "vvkantaev@yandex.ru",
+    "url": "https://deltation.tatar"
+  },
+  "dependencies": {
+    "com.unity.device-simulator": "3.0.1-preview",
+    "com.unity.ugui": "1.0.0"
+  }
+}
