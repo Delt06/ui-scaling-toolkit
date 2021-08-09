@@ -23,6 +23,10 @@ Add the following line to `Packages/manifest.json`:
 "com.deltation.ui-scaling-toolkit": "https://github.com/Delt06/ui-scaling-toolkit.git?path=Packages/com.deltation.ui-scaling-toolkit",
 ```
 
+## Dependencies
+- Unity UI (uGUI)
+- Device Simulator (at least 3.0.1-preview)
+
 ## Components
 - Safe Area Canvas Scaler - ensures safe area always has intended height
 - Safe Area Settings - extra configuration 
