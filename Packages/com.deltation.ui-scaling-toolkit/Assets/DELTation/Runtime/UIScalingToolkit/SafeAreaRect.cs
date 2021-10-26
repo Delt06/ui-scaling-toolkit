@@ -16,10 +16,12 @@ namespace DELTation.UIScalingToolkit
 
         protected override void ApplySafeArea(ref Rect safeArea)
         {
+            if (!SafeAreaUtils.CalculateSafeRectAnchors(safeArea, out var anchors)) return;
+            
             _rectTransform.anchoredPosition = Vector2.zero;
             _rectTransform.sizeDelta = Vector2.zero;
 
-            var (anchorMin, anchorMax) = SafeAreaUtils.CalculateSafeRectAnchors(safeArea);
+            var (anchorMin, anchorMax) = anchors;
             _rectTransform.anchorMin = anchorMin;
             _rectTransform.anchorMax = anchorMax;
         }

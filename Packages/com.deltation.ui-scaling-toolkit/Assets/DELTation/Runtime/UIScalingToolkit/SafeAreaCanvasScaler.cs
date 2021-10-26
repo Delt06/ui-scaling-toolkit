@@ -22,7 +22,9 @@ namespace DELTation.UIScalingToolkit
 
         protected override void ApplySafeArea(ref Rect safeArea)
         {
-            var (anchorMin, anchorMax) = SafeAreaUtils.CalculateSafeRectAnchors(safeArea);
+            if (!SafeAreaUtils.CalculateSafeRectAnchors(safeArea, out var anchors)) return;
+            
+            var (anchorMin, anchorMax) = anchors;
             var inverseScale = anchorMax - anchorMin;
             var resolution = _referenceResolution / inverseScale;
             _canvasScaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;

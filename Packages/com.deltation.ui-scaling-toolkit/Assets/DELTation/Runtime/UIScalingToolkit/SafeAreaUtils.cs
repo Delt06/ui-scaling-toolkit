@@ -33,15 +33,25 @@ namespace DELTation.UIScalingToolkit
             return safeArea;
         }
 
-        public static (Vector2 anchorMin, Vector2 anchorMax) CalculateSafeRectAnchors(in Rect safeArea)
+        public static bool CalculateSafeRectAnchors(in Rect safeArea, out (Vector2 anchorMin, Vector2 anchorMax) anchors)
         {
+            var width = Screen.width;
+            var height = Screen.height;
+
+            if (Mathf.Approximately(width, 0f) || Mathf.Approximately(height, 0f))
+            {
+                anchors = default;
+                return false;
+            }
+            
             var anchorMin = safeArea.position;
             var anchorMax = safeArea.position + safeArea.size;
-            anchorMin.x /= Screen.width;
-            anchorMin.y /= Screen.height;
-            anchorMax.x /= Screen.width;
-            anchorMax.y /= Screen.height;
-            return (anchorMin, anchorMax);
+            anchorMin.x /= width;
+            anchorMin.y /= height;
+            anchorMax.x /= width;
+            anchorMax.y /= height;
+            anchors = (anchorMin, anchorMax);
+            return true;
         }
     }
 }

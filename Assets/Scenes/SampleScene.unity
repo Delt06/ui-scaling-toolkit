@@ -213,10 +213,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 749997397408941608, guid: fe86f6b7f34b4354da24aa358db68eb2, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.950495
-      objectReference: {fileID: 0}
     - target: {fileID: 807670355195647452, guid: fe86f6b7f34b4354da24aa358db68eb2, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -304,10 +300,6 @@ PrefabInstance:
     - target: {fileID: 2090989226498327337, guid: fe86f6b7f34b4354da24aa358db68eb2, type: 3}
       propertyPath: m_Name
       value: Demo Scalable UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 3221576165031300535, guid: fe86f6b7f34b4354da24aa358db68eb2, type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 2301.8284
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe86f6b7f34b4354da24aa358db68eb2, type: 3}
