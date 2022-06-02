@@ -34,7 +34,7 @@ Add the following line to `Packages/manifest.json`:
   - Extra padding (e.g. to handle banners)
 - Safe Area Rect - adjusts anchors (full screen) to exclude unsafe area
 
-Tip: full screen backgrounds and overlays should not be inside a Safe Area Rect to prevent creating holes in unsafe area.
+> Tip: full screen backgrounds and overlays should not be inside a Safe Area Rect to prevent creating holes in unsafe area.
 
 ## Device
 According to a [StackOverflow thread](https://stackoverflow.com/questions/7199492/what-are-the-aspect-ratios-for-all-android-phone-and-tablet-devices), the lowest width to height ratio is 9:19.5.
