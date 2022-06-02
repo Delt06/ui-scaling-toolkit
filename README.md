@@ -25,7 +25,7 @@ Add the following line to `Packages/manifest.json`:
 
 ## Dependencies
 - Unity UI (uGUI)
-- Device Simulator (at least 3.0.1-preview)
+- Device Simulator (bundled with Unity)
 
 ## Components
 - Safe Area Canvas Scaler - ensures safe area always has intended height
