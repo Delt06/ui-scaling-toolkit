@@ -7,7 +7,7 @@
 
 A collection of components to ensure proper UI scaling for mobile devices.
 
-> Developed and tested with Unity 2020.3.0f1 LTS
+> Developed and tested with Unity 2021.3.3f1 LTS
 > 
 > Designed to work with Portrait mode games. 
 
